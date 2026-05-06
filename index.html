@@ -8,9 +8,23 @@
     <title>Algorikion</title>
     <style>
 
+        .bloc {
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 10px;
+            background-color: beige;
+        }
+
         .Logo_sans_fond {
             width: 100px;
             height: auto;
+        }
+
+        #Titre {
+            font-size: 40px;
+            font-weight: bold;
         }
 
         #titre_bloc {
@@ -21,17 +35,43 @@
             gap: 20px;
         }
 
+        .lien {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
     </style>
 </head>
 <body>
     <div id="titre_bloc">
 	
 		<img src="Images/Logo_sans_fond.png" class="Logo_sans_fond">
-		<div id="Titre">Bienvenue dans la page de présentation de mes projets</div>
+		<h1 id="Titre">Bienvenue dans la page de présentation de mes projets</h1>
 		<img src="Images/Logo_sans_fond.png" class="Logo_sans_fond">
-
 		
 	</div>
+
+    <div id="algorikion_bloc" class="bloc">
+
+        <h2>Algorikion</h2>
+        <p>Bonjour, moi c'est algorikion, un développeur passionné. Je fais de la programmation Web, du Arduino, et j'espère découvrir en de nouveaux programmes. Vous êtes ici sur un page dans laquelle se trouve tous mes projets de développement Web.</p>
+
+    </div>
+
+    <div id="liens_bloc" class="bloc">
+
+            <h2>Liens vers mes projets</h2>
+
+            <div id="code_couleur" class="lien"> 
+                <h3><a href="https://algorikion.github.io/Code_couleur/" target="_blank" style="color: black;">Code couleur</a></h3>
+                
+                <p>Cette page permet de trouver le code en différents languages d'une couleur déffinié par un maximum de paramètres.</p>
+                <img src="Images/Code_couleur.png" alt="Image du projet code couleur" width="300px">
+            </div>
+    </div>
 
 </body>
 </html>
